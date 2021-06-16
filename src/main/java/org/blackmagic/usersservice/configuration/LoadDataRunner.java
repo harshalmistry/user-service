@@ -25,17 +25,6 @@ public class LoadDataRunner implements CommandLineRunner {
         userRepository.save(new User(2, "niharsh2211@gmail.com", "password", new Date()));
         userRepository.save(new User(3, "niti.panchal@gmail.com", "password", new Date()));
         userRepository.findAll().forEach(System.out::println);
-
-//        echo "# stocks-service" >> README.md
-//        git init
-//        git add README.md
-//        git commit -m "first commit"
-//        git branch -M main
-//        git remote add origin https://github.com/harshalmistry/stocks-service.git
-//        git push -u origin main
-
-//        git remote add origin https://github.com/harshalmistry/stocks-service.git
-//        git branch -M main
-//        git push -u origin main
+        
     }
 }
