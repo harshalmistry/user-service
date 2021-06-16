@@ -25,6 +25,6 @@ public class LoadDataRunner implements CommandLineRunner {
         userRepository.save(new User(2, "niharsh2211@gmail.com", "password", new Date()));
         userRepository.save(new User(3, "niti.panchal@gmail.com", "password", new Date()));
         userRepository.findAll().forEach(System.out::println);
-        
+
     }
 }
