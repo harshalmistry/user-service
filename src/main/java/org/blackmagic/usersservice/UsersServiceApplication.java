@@ -1,9 +1,9 @@
 package org.blackmagic.usersservice;
 
+//import brave.sampler.Sampler;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Date;
 
 @SpringBootApplication
 public class UsersServiceApplication {
@@ -11,5 +11,10 @@ public class UsersServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UsersServiceApplication.class, args);
 	}
+
+//	@Bean
+//	public Sampler defaultSampler(){
+//		return Sampler.ALWAYS_SAMPLE;
+//	}
 
 }

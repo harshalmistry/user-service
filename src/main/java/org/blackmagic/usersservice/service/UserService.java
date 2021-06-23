@@ -1,6 +1,7 @@
 package org.blackmagic.usersservice.service;
 
-import org.blackmagic.usersservice.entity.User;
+import org.blackmagic.usersservice.entity.UserEntity;
+import org.blackmagic.usersservice.modal.User;
 
 /**
  * @author niharsh
@@ -8,5 +9,5 @@ import org.blackmagic.usersservice.entity.User;
  */
 public interface UserService {
     User saveUser(User user);
-    User getUserByEmail(String email);
+    long authenticate(User User);
 }
